@@ -1,12 +1,12 @@
 # SlimeLine
 This pipeline aims to analyze raw metagenomic datasets for taxonomic and functional profiling of plasmodial slime molds, Myxomycetes. 
 
-### Hardware:
+### Hardware
    • An x86-compatible platform that is compatible with the indicated operating system (OS) and softwares
    • At least 4GB of RAM, a keyboard, and sufficient disk space for output files
    • Administrative privileges which are necessary to install and run the programs listed. 
    
-### Softwares Used (for Taxonomic Profiling
+### Softwares Used (for Taxonomic Profiling)
    • Any version of Linux (or a Windows VM running Linux) compatible with the following softwares
    • MEGAHIT ver. 1.2.9 
    • EukRep ver. 0.6.7
@@ -15,7 +15,7 @@ This pipeline aims to analyze raw metagenomic datasets for taxonomic and functio
    • Unix shell of choice (Bash is used for this pipeline)
    *** Some softwares have required dependencies that also need to be installed.
 
-Disclaimer: 
+## Disclaimer: 
 The scripts pertain to the assembly and taxonomic profiling portions of the pipeline. For functional profiling, the webservers of MetaGeneMark, GhostKOALA, and KEGG Mapper were utilized.
 
 ### Files Included:
