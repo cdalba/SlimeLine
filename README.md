@@ -39,7 +39,7 @@ Alneberg, J., Bjarnason, B. S., de Bruijn, I., Schirmer, M., Quick, J., Ijaz, U.
 (2013). CONCOCT: clustering contigs on coverage and composition. arXiv preprint 
 arXiv:1312.4038.
 
-Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data '[Online]'. Available online at: 'http://www.bioinformatics.babraham.ac.uk/projects/fastqc/'
 
 Bengtsson‐Palme, J., Hartmann, M., Eriksson, K. M., Pal, C., Thorell, K., Larsson, D. G. J., & 
 Nilsson, R. H. (2015). METAXA2: improved identification and taxonomic classification 
