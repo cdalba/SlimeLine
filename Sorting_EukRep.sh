@@ -1,25 +1,21 @@
 #!/bin/bash
-#SBATCH --partition=batch
-#SBATCH --qos=240c-1h_batch
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=64
-#SBATCH --mem=64G
-#SBATCH --job-name="Myxo_Guiuan_EukRep"
-#SBATCH --output=Myxo_Guiuan_EukRep.%J.out
+#!/bin/bash
 
-#SBATCH --error=Myxo_Guiuan_EukRep.%J.err
-#SBATCH --mail-user=cdalba@up.edu.ph
-#SBATCH --mail-type=ALL
+###############################################################################################################################################
+#
+#                     This Bash script is written by C.D. Alba.
+#
+#               This script performs sorting of eukaryotic contigs.
+#             
+#         You can use any terminal to run this script. Ensure that all required software is installed and that all required files are available. 
+#
+###############################################################################################################################################
 
-echo "SLURM_JOBID="$SLURM_JOBID
-echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
-echo "SLURM_NNODES"=$SLURM_NNODES
-echo "SLURMTMPDIR="$SLURMTMPDIR
-echo "working directory="$SLURM_SUBMIT_DIR
+#insert SLURM/sbatch variables here if needed
 
 ulimit -s unlimited 
 
-cd /scratch1/scratch2/charmaine.alba
+cd /path/to/raw/data &&\ 
 
 module load anaconda/3-2021.11
 source activate myxocnda2
