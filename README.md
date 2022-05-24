@@ -26,7 +26,7 @@ The scripts pertain to the assembly and taxonomic profiling portions of the pipe
    • Reads-based Taxonomic Profiling_Metaxa2.sh
    • Metaxa2_TTT.sh
    
-If you use SlimeLine in your publication, kindly cite the authors,
+## If you use SlimeLine in your publication, kindly cite the authors,
 
 Alba, C.D.O., Fahrenbach, S.U., Ong, J.D.P., Balolong, M.P., Pagoso, E.J.A. (2022). Taxonomic and Functional Profiling of Myxomycetes from Karst Forest Soils of Guiuan, Samar, Philippines. [unpublished]. 
 
