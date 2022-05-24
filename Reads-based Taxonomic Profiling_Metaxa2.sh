@@ -1,25 +1,20 @@
 #!/bin/bash 
-#SBATCH --partition=serial 
-#SBATCH --qos=84c-1d_serial 
-#SBATCH --nodes=1 
-#SBATCH --ntasks-per-node=32
-#SBATCH --mem=120G
-#SBATCH --job-name="Myxo_G1_Reads-based"
-#SBATCH --output=G1_Reads-based.%J.out
 
-#SBATCH --error=G1_Reads-based.%J.err
-#SBATCH --mail-user=cdalba@up.edu.ph
-#SBATCH --mail-type=ALL
+###############################################################################################################################################
+#
+#                     This Bash script is written by C.D. Alba.
+#
+#             This script performs the reads-based taxonomic profiling.
+#             
+#         You can use any terminal to run this script. Ensure that all required software is installed and that all required files are available. 
+#
+###############################################################################################################################################
 
-echo "SLURM_JOBID="$SLURM_JOBID
-echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
-echo "SLURM_NNODES"=$SLURM_NNODES
-echo "SLURMTMPDIR="$SLURMTMPDIR
-echo "working directory="$SLURM_SUBMIT_DIR
+#insert SLURM/sbatch variables here if needed
 
 ulimit -s unlimited 
 
-cd /scratch3/charmaine.alba/Stuff
+cd /path/to/raw/data &&\ 
 
 module load anaconda/3-2021.11
 source activate metaxa
