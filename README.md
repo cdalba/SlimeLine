@@ -4,7 +4,7 @@ This pipeline aims to analyze raw metagenomic datasets for taxonomic and functio
 ### Hardware
    • An x86-compatible platform that is compatible with the indicated operating system (OS) and softwares \
    • At least 4GB of RAM, a keyboard, and sufficient disk space for output files \
-   • Administrative privileges which are necessary to install and run the programs listed  \
+   • Administrative privileges which are necessary to install and run the programs listed 
    
 ### Softwares Used (for Taxonomic Profiling)
    • Any version of Linux (or a Windows VM running Linux) compatible with the following softwares  \
@@ -13,9 +13,9 @@ This pipeline aims to analyze raw metagenomic datasets for taxonomic and functio
    • CONCOCT ver. 1.1.0  \
    • Metaxa2 ver. 2.2.3  \
    • Unix shell of choice (Bash is used for this pipeline)  \
-   *** Some softwares have required dependencies that also need to be installed. \
+   *** Some softwares have required dependencies that also need to be installed.
 
-## Disclaimer: 
+### Disclaimer: 
 The scripts pertain to the assembly and taxonomic profiling portions of the pipeline. For functional profiling, the webservers of MetaGeneMark, GhostKOALA, and KEGG Mapper were utilized.
 
 ### Files Included:
@@ -24,9 +24,9 @@ The scripts pertain to the assembly and taxonomic profiling portions of the pipe
    • Binning_Concoct.sh  \
    • Assembly-based Taxonomic Profiling_Metaxa2.sh  \
    • Reads-based Taxonomic Profiling_Metaxa2.sh  \
-   • Metaxa2_TTT.sh  \
+   • Metaxa2_TTT.sh 
    
-## If you use SlimeLine in your publication, kindly cite the authors,
+### If you use SlimeLine in your publication, kindly cite the authors,
 
 Alba, C.D.O., Fahrenbach, S.U., Ong, J.D.P., Balolong, M.P., Pagoso, E.J.A. (2022). Taxonomic and Functional Profiling of Myxomycetes from Karst Forest Soils of Guiuan, Samar, Philippines. [unpublished]. 
 
