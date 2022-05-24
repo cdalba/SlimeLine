@@ -1,25 +1,20 @@
 #!/bin/bash
-#SBATCH --partition=debug
-#SBATCH --qos=240c-1h_debug
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=64
-#SBATCH --mem=64G
-#SBATCH --job-name="Myxo_ATP_G1_Metaxa"
-#SBATCH --output=Guiuan1_MetaxaATP.%J.out
 
-#SBATCH --error=Guiuan1_MetaxaATP.%J.err
-#SBATCH --mail-user=cdalba@up.edu.ph
-#SBATCH --mail-type=ALL
+###############################################################################################################################################
+#
+#                     This Bash script is written by C.D. Alba.
+#
+#             This script performs the assembly-based taxonomic profiling. 
+#             
+#         You can use any terminal to run this script. Ensure that all required software is installed and that all required files are available. 
+#
+###############################################################################################################################################
 
-echo "SLURM_JOBID="$SLURM_JOBID
-echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
-echo "SLURM_NNODES"=$SLURM_NNODES
-echo "SLURMTMPDIR="$SLURMTMPDIR
-echo "working directory="$SLURM_SUBMIT_DIR
+#insert SLURM/sbatch variables here if needed
 
 ulimit -s unlimited 
 
-cd /scratch1/charmaine.alba/G1_output_concoct/G1_bins_concoct 
+cd /path/to/raw/data &&\ 
 
 module load anaconda/3-2021.11
 source activate metaxa
@@ -69,4 +64,3 @@ metaxa2 -i 20.fa -o 20_metaxa2 -t e -f p -g ssu -d blast.fasta --mode m --plus T
 metaxa2 -i 21.fa -o 21_metaxa2 -t e -f p -g ssu -d blast.fasta --mode m --plus T --blast_eval 1e-5 --cpu 1 --table T --not_found T --save_raw T && \
 \
 metaxa2 -i 22.fa -o 22_metaxa2 -t e -f p -g ssu -d blast.fasta --mode m --plus T --blast_eval 1e-5 --cpu 1 --table T --not_found T --save_raw T
-
